@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hassan´s Portifolio</title>
+  <link rel="stylesheet" href="2Style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="script.js" defer></script>
+
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="logo">Velkommen til min Portifolio</div>
+    <img src="slogo.png" alt="Logo" class="logo-img">
+
+    <nav>
+      <ul class="nav-links">
+        <!-- You can add other links here if needed -->
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Søk..." />
+      <button class="search-btn">🔍</button>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="hero">
+    <h1>Finn mine prosjekter Her!</h1>
+    <p>Jeg heter Hassan og går på Bjørnholt VGS. 
+        Dette er min Portifolio og her er alle prosjektene som jeg har jobbet med.</p>
+    <div class="hero-buttons">
+      <a href="#services" class="btn-primary" id="readMoreBtn">Les mer</a>
+      <a href="#kontakt" class="btn-secondary" id="contactUsBtn">Kontakt meg</a>
+      <a href="#prosjekter" class="btn-secondary" id="prosjekter">prosjekter</a>
+    </div>
+  </main>
+  
+  <main>
+    
+      
+            
+
+            <!-- Projects Section -->
+<section class="hidden-section" id="prosjekter-section">
+  <button id="backToMain" class="btn-secondary">← Back</button>
+  <h2>My Projects</h2>
+  <p>Explore some of the projects I've worked on.</p>
+  <div class="projects-grid">
+    <!-- Placeholder for projects -->
+    <div class="project-card">
+      <img src="/Users/shcea002/Documents/boot-strap/website/Screenshot_2024-12-05_at_08.31.17-removebg-preview.png" alt="Project 1">
+      <h3>Project 1</h3>
+      <p>My avatar meant to represent me.</p>
+    </div>
+    <div class="project-card">
+      <img src="/Users/shcea002/Documents/boot-strap/website/slogo.png" alt="Project 2">
+      <h3>Project 2</h3>
+      <p>My logo.</p>
+    </div>
+    <!-- Add more projects here -->
+  </div>
+</section>
+
+<section id="readmore-section" class="hidden-section">
+  <button id="backFromReadMore" class="btn-secondary">← Back</button>
+  <h1>Om meg</h1>
+  <p>Dette er en portefolje hvor jeg presenterer prosjektene og ferdighetene mine.</p>
+  <p>Jeg håper du liker det!</p>
+</section>
+
+<section id="contact" class="portfolio-section">
+  <button id="backToMain" class="btn-secondary">← Back</button>
+  <h1>Kontakt Meg</h1>
+  <form class="contact-form">
+    <label for="name">Navn:</label>
+    <input type="text" id="name" name="name" placeholder="Skriv inn ditt navn" required>
+
+    <label for="email">E-post:</label>
+    <input type="email" id="email" name="email" placeholder="Skriv inn din e-postadresse" required>
+
+    <label for="message">Melding:</label>
+    <textarea id="message" name="message" placeholder="Skriv inn din melding" rows="5" required></textarea>
+
+    <button type="submit" class="submit-btn">Send melding</button>
+  </form>
+</section>
+
